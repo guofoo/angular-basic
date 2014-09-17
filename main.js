@@ -26,9 +26,8 @@ myApp.filter('shiftString',function(){
     var letters = new Array(input.length);
     for (var i = 0; i < input.length; i++) {
       //依照规则遍历字符串并存在letters的相对应的位置
-
-
-
+      var j = (i+numberToShift)%input.length;
+      letters[j] = input.charAt(i);
     }
     //将改造好的数组转换成字符串输出  
     return letters.join('');    
