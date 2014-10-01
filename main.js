@@ -15,6 +15,7 @@ myApp.controller('FirstCtrl',function($scope, DataStore){
   $scope.message = DataStore.message;
 
   //add todo variable
+  $scope.todo = DataStore.todo;
 
 });
 
@@ -23,5 +24,6 @@ myApp.controller('SecondCtrl', function($scope, DataStore){
   $scope.message = DataStore.message;
 
   //add todo variable
+  $scope.todo = DataStore.todo;
 
 });
