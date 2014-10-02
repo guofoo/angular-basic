@@ -25,7 +25,7 @@ function FirstCtrl($scope, DataStore){
 
   $scope.saveMessage = function(){
     //调用工厂中setMessage方法来保存更新的message
-
+    DataStore.setMessage($scope.message);
   };
 
 }
@@ -40,7 +40,7 @@ function SecondCtrl($scope, DataStore){
 
   $scope.fetchMessage = function(){
     //调用工厂中getMessage方法来获取更新过的message
-
+    $scope.message = DataStore.getMessage();
   };
 
 }
